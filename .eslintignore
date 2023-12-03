@@ -1,0 +1,14 @@
+.next
+.husky
+next-env.d.ts
+node_modules
+yarn.lock
+package-lock.json
+public
+tailwind.config.ts
+tsconfig.json
+README.md
+postcss.config.js
+package.json 
+next.config.js
+lint-staged.config.js
