@@ -1,14 +1,14 @@
 module.exports = {
   // this will check Typescript files
-  '**/*.(ts|tsx)': () => 'npm tsc --noEmit',
+  '**/*.(ts|tsx)': () => 'npm run tsc --noEmit',
 
   // This will lint and format TypeScript and JavaScript files
   '**/*.(ts|tsx|js)': (filenames) => [
-    `npm eslint --fix ${filenames.join(' ')}`,
-    `npm prettier --write ${filenames.join(' ')}`,
+    `npm run lint --fix ${filenames.join(' ')}`,
+    `npm run format ${filenames.join(' ')}`,
   ],
 
   // this will Format MarkDown and JSON
   '**/*.(md|json)': (filenames) =>
-    `npm prettier --write ${filenames.join(' ')}`,
+    `npm run format ${filenames.join(' ')}`,
 }
