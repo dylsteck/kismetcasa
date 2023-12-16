@@ -3,7 +3,7 @@ import React from 'react'
 export function Footer() {
   return (
     <div className="flex items-center justify-center p-6 text-grey-800 gap-2 mt-16">
-      <p className="text-sm font-light">© Kismet Casa 2023</p>
+      <p className="text-sm font-light m-0">© Kismet Casa 2023</p>
       <span>|</span>
       <a
         href="https://github.com/dylsteck/kismetcasa"
