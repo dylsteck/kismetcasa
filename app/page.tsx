@@ -3,12 +3,14 @@ import { Footer, ZoraNFTViewer, KismetLogo } from '@/components'
 import { XIcon } from '@/assets/socialMediaIcons'
 import Image from 'next/image'
 import rainbowkit from '@/public/rainbowkit-logo.png'
+import { NavBar } from '@/components/NavBar'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center">
+      <NavBar />
       <header className="flex justify-center">
         <KismetLogo />
       </header>
@@ -17,15 +19,42 @@ export default function Home() {
       >
         <section>
           <h3>Kismet Casa</h3>
-          <p className="max-w-3xl mx-auto">
-            Was founded in 2018 by Luciano DeAngelo to unite like-minded
-            individuals during the challenging times of the bear market. We
-            partner with value-aligned organizations to subsidize housing and
-            travel costs for our hackers. Lea Olmos joined Kismet in 2020 after
-            being introduced to Luciano through a mutual friend. Lea has played
-            an integral role in creating and maintaining Kismet Casa by
-            spearheading our operations.
-          </p>
+          <span className="max-w-3xl mx-auto">
+            <b>What?</b>
+            <p>
+              Kismet is a Community of individuals who forge their fate,
+              together.
+            </p>
+          </span>
+          <span className="max-w-3xl mx-auto">
+            <b>Why?</b>
+            <p>Kismet Casa&apos;s purpose is to support those who need it.</p>
+          </span>
+          <span className="max-w-3xl mx-auto">
+            <b>How?</b>
+            <p>
+              We currently create opportunities for builders to attend Ethereum
+              events and hackatons by hosting hacker houses where we accomodate
+              their stay, their food and anything else we can. We also support
+              their projects by helping them find the right team members,
+              hosting workshops and providing the resources they need.
+            </p>
+
+            <p>
+              We do the same for creators during IRL art experiences. Helping
+              them meet new artists, gain exposure, and getting them special
+              access to events.
+            </p>
+          </span>
+          <span className="max-w-3xl mx-auto">
+            <b>Who?</b>
+            <p>
+              Kismet was founded in ther depths of the 2018 bear market by
+              Luciano DeAngelo.
+            </p>
+
+            <p>Kismet Casa is run by Luciano DeAngelo and Lea Olmos.</p>
+          </span>
         </section>
         <section className="flex flex-col gap-2">
           <h3>Events</h3>

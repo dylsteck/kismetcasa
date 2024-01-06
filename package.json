@@ -7,13 +7,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --ext .js,.ts",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "format": "npx prettier --write .",
     "prepare": "husky install",
     "tsc": "tsc"
   },
   "dependencies": {
     "-": "^0.0.1",
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.1.1",
     "framer-motion": "^10.16.9",
     "next": "14.0.3",
     "open-graph-scraper": "^6.3.2",
