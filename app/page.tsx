@@ -79,7 +79,7 @@ export default function Home() {
       </div>
       <div className="w-[100%] pt-[5vh] pb-[2.5vh]">
         <p className="text-sm font-light">
-          Kismet Casa 2023 |
+          &#169; Kismet Casa 2024 |
           <Link
             href="https://github.com/dylsteck/kismetcasa"
             className="pl-[0.5vw]"

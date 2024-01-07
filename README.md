@@ -1,6 +1,8 @@
 ### kismetcasa
 
-The homepage for Kismet Casa -- [view the site](https://kismetcasa.vercel.app/)
+![Kismet Casa v1 website](https://i.imgur.com/oV5XCJ3.png)
+
+The homepage for Kismet Casa -- [view the site](https://kismetcasa.xyz)
 
 What the site does right now:
 

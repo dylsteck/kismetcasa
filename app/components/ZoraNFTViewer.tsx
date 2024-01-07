@@ -48,7 +48,7 @@ export default function ZoraNFTViewer({ zoraURL }: { zoraURL: string }) {
   if (error) return <div className="text-red-500">{error}</div>
 
   return (
-    <div className="relative pt-1 max-w-[25vw]">
+    <div className="relative pt-1 max-w-[65vw] md:max-w-[25vw]">
       {ogData?.ogImage && ogData.ogImage[0] && (
         <>
           <Image
