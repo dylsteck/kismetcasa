@@ -1,4 +1,7 @@
+'use client'
+
 import { useState } from 'react'
+import { Drawer } from '@/components/Drawer'
 
 function NavBar() {
   const [isEnabled, setIsEnabled] = useState<boolean>(false)
@@ -16,6 +19,7 @@ function NavBar() {
       >
         Apply
       </button>
+      <Drawer open={isEnabled} setOpen={setIsEnabled} />
     </div>
   )
 }
