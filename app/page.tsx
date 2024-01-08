@@ -105,7 +105,7 @@ export default function Home() {
               <p className="group-hover:text-blue-800 m-0">Kismet Casa</p>
             </a>
             <a
-              href="https://twitter.com/lucianodeangelo"
+              href="https://twitter.com/lucianodeangeIo"
               target="_blank"
               rel="noreferrer"
               className="transition flex gap-2 w-fit items-center group"
