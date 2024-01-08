@@ -1,7 +1,9 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { ApplicantForm } from '@/components/Form'
+import './drawer.css'
 
 interface DrawerProps {
   open: boolean
@@ -26,7 +28,7 @@ function Drawer({ open, setOpen }: DrawerProps) {
 
         <div className="fixed inset-0 overflow-hidden">
           <div className="absolute inset-0 overflow-hidden">
-            <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
+            <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-0 md:pl-10">
               <Transition.Child
                 as={Fragment}
                 enter="transform transition ease-in-out duration-500 sm:duration-700"
@@ -46,10 +48,10 @@ function Drawer({ open, setOpen }: DrawerProps) {
                     leaveFrom="opacity-100"
                     leaveTo="opacity-0"
                   >
-                    <div className="absolute left-0 top-0 -ml-8 flex pr-2 pt-4 sm:-ml-10 sm:pr-4">
+                    <div className="absolute left-16 md:left-0 top-0 -ml-8 flex pr-2 pt-4 sm:-ml-10 sm:pr-4">
                       <button
                         type="button"
-                        className="relative rounded-md text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
+                        className="relative rounded-md text-gray-700 md:text-gray-300 hover:text-black md:hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
                         onClick={() => setOpen(false)}
                       >
                         <span className="absolute -inset-2.5" />
@@ -58,13 +60,13 @@ function Drawer({ open, setOpen }: DrawerProps) {
                       </button>
                     </div>
                   </Transition.Child>
-                  <div className="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
-                    <div className="px-4 sm:px-6">
-                      <Dialog.Title className="text-base font-semibold leading-6 text-gray-900">
+                  <div className="flex w-full h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
+                    <div className="px-4 sm:px-8 pt-3 md:pt-0">
+                      <Dialog.Title className="text-lg font-semibold leading-6 text-gray-900 pl-4 md:pl-0">
                         Apply to our next Kismet Casa edition!
                       </Dialog.Title>
                     </div>
-                    <div className="relative mt-6 flex-1 px-4 sm:px-6">
+                    <div className="relative flex-1">
                       <ApplicantForm />
                     </div>
                   </div>

@@ -1,9 +1,11 @@
 import React from 'react'
 
 export function Footer() {
+  const currentYear = new Date().getFullYear()
+
   return (
     <div className="flex items-center justify-center p-6 text-grey-800 gap-2 mt-16">
-      <p className="text-sm font-light m-0">© Kismet Casa 2023</p>
+      <p className="text-sm font-light m-0">© Kismet Casa {currentYear}</p>
       <span>|</span>
       <a
         href="https://github.com/dylsteck/kismetcasa"

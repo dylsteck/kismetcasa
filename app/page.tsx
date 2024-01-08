@@ -4,6 +4,7 @@ import { XIcon } from '@/assets/socialMediaIcons'
 import Image from 'next/image'
 import rainbowkit from '@/public/rainbowkit-logo.png'
 import { NavBar } from '@/components/NavBar'
+import { nfts } from '@/utils/nfts'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,40 +20,38 @@ export default function Home() {
       >
         <section>
           <h3>Kismet Casa</h3>
-          <span className="max-w-3xl mx-auto">
-            <b>What?</b>
+          <span className="max-w-[75%] md:max-w-[65%] mx-auto">
+            <b className="text-lg">What?</b>
             <p>
               Kismet is a Community of individuals who forge their fate,
               together.
             </p>
           </span>
-          <span className="max-w-3xl mx-auto">
-            <b>Why?</b>
+          <span className="max-w-[75%] md:max-w-[65%] mx-auto">
+            <b className="text-lg">Why?</b>
             <p>Kismet Casa&apos;s purpose is to support those who need it.</p>
           </span>
-          <span className="max-w-3xl mx-auto">
-            <b>How?</b>
-            <p>
+          <span className="text-center">
+            <b className="text-lg">How?</b>
+            <p className="mx-auto max-w-[75%] md:max-w-[65%]">
               We currently create opportunities for builders to attend Ethereum
-              events and hackatons by hosting hacker houses where we accomodate
-              their stay, their food and anything else we can. We also support
+              events and hackatons by hosting hacker houses where we accommodate
+              their stay, their food, and anything else we can. We also support
               their projects by helping them find the right team members,
-              hosting workshops and providing the resources they need.
+              hosting workshops, and providing the resources they need.
             </p>
-
-            <p>
+            <p className="mx-auto max-w-[75%] md:max-w-[65%]">
               We do the same for creators during IRL art experiences. Helping
               them meet new artists, gain exposure, and getting them special
               access to events.
             </p>
           </span>
-          <span className="max-w-3xl mx-auto">
-            <b>Who?</b>
+          <span className="max-w-[75%] md:max-w-[65%] mx-auto">
+            <b className="text-lg">Who?</b>
             <p>
-              Kismet was founded in ther depths of the 2018 bear market by
+              Kismet was founded in the depths of the 2018 bear market by
               Luciano DeAngelo.
             </p>
-
             <p>Kismet Casa is run by Luciano DeAngelo and Lea Olmos.</p>
           </span>
         </section>
@@ -73,9 +72,9 @@ export default function Home() {
         <section className="flex flex-col gap-2">
           <h3>NFTs</h3>
           <div className="flex flex-wrap gap-4 justify-center items-center">
-            <ZoraNFTViewer zoraURL="https://zora.co/collect/zora:0x8e4a7d53e12cea8f21646ef303fed39162e5df49/1" />
-            <ZoraNFTViewer zoraURL="https://zora.co/collect/zora:0x8e4a7d53e12cea8f21646ef303fed39162e5df49/2" />
-            <ZoraNFTViewer zoraURL="https://zora.co/collect/zora:0x8e4a7d53e12cea8f21646ef303fed39162e5df49/3" />
+            {nfts.map((nft) => (
+              <ZoraNFTViewer key={`zora-nft-${nfts.indexOf(nft)}`} nft={nft} />
+            ))}
           </div>
         </section>
         <section className="flex flex-col gap-2">
@@ -103,7 +102,7 @@ export default function Home() {
               className="transition flex gap-2 w-fit items-center group"
             >
               <XIcon className="h-6 w-6 fill-current" />
-              <p className="group-hover:text-blue-800 m-0">Kismet Twitter</p>
+              <p className="group-hover:text-blue-800 m-0">Kismet Casa</p>
             </a>
             <a
               href="https://twitter.com/lucianodeangelo"
