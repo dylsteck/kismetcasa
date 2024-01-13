@@ -3,7 +3,6 @@ import { Footer, ZoraNFTViewer, KismetLogo } from '@/components'
 import { XIcon } from '@/assets/socialMediaIcons'
 import Image from 'next/image'
 import rainbowkit from '@/public/rainbowkit-logo.png'
-import { NavBar } from '@/components/NavBar'
 import { nfts } from '@/utils/nfts'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -11,7 +10,6 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <div className="flex flex-col items-center">
-      <NavBar />
       <header className="flex justify-center">
         <KismetLogo />
       </header>
@@ -56,9 +54,20 @@ export default function Home() {
           </span>
         </section>
         <section className="flex flex-col gap-2">
-          <h3>Events</h3>
+          <h3>Past Events</h3>
           <a
-            href="https://nouns.build/dao/zora/0x32297b7416294b1acf404b6148a3c58107ba8afd/vote/5"
+            href="https://twitter.com/KismetCasa/status/1694392087452545122"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-blue-800"
+          >
+            <p>
+              Kismet Casa at Ethereum Argentina -{' '}
+              <span className="font-light text-sm">Aug 2023</span>
+            </p>
+          </a>
+          <a
+            href="https://twitter.com/KismetCasa/status/1722344034369224728"
             target="_blank"
             rel="noreferrer"
             className="hover:text-blue-800"
@@ -70,7 +79,7 @@ export default function Home() {
           </a>
         </section>
         <section className="flex flex-col gap-2">
-          <h3>NFTs</h3>
+          <h3>Creator House 2023 Collection</h3>
           <div className="flex flex-wrap gap-4 justify-center items-center">
             {nfts.map((nft) => (
               <ZoraNFTViewer key={`zora-nft-${nfts.indexOf(nft)}`} nft={nft} />
