@@ -3,6 +3,7 @@ import { Footer, ZoraNFTViewer, KismetLogo } from '@/components'
 import { XIcon } from '@/assets/socialMediaIcons'
 import Image from 'next/image'
 import rainbowkit from '@/public/rainbowkit-logo.png'
+import warpcast from '@/public/warpcast-logo.png'
 import { nfts } from '@/utils/nfts'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -129,6 +130,36 @@ export default function Home() {
               className="transition flex gap-2 w-fit items-center group"
             >
               <XIcon className="h-6 w-6 fill-current " />
+              <p className="group-hover:text-blue-800 m-0">Lea</p>
+            </a>
+            <a
+              href="https://warpcast.com/luciano"
+              target="_blank"
+              rel="noreferrer"
+              className="transition flex gap-2 w-fit items-center group"
+            >
+              <Image
+                width={24}
+                height={24}
+                src={warpcast}
+                alt="warpcast-logo"
+                className="filter grayscale"
+              />
+              <p className="group-hover:text-blue-800 m-0">Luciano</p>
+            </a>
+            <a
+              href="https://warpcast.com/lea-olmos"
+              target="_blank"
+              rel="noreferrer"
+              className="transition flex gap-2 w-fit items-center group"
+            >
+              <Image
+                width={24}
+                height={24}
+                src={warpcast}
+                alt="warpcast-logo"
+                className="filter grayscale"
+              />
               <p className="group-hover:text-blue-800 m-0">Lea</p>
             </a>
           </div>

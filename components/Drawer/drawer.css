@@ -1,6 +1,6 @@
 /* Styles for the Google Forms's iframe */
-iframe{
-    max-width: 100%;
-    max-height: 100vh;
-    overflow-y: scroll;
+iframe {
+  max-width: 100%;
+  max-height: 100vh;
+  overflow-y: scroll;
 }
