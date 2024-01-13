@@ -22,35 +22,39 @@ export default function Home() {
           <span className="max-w-[75%] md:max-w-[65%] mx-auto">
             <b className="text-lg">What?</b>
             <p>
-              Kismet is a Community of individuals who forge their fate,
-              together.
+              Kismet is a Community of individuals who forge their fate
+              together. Kismet Casa is a collective effort to accommodate
+              talented individuals who need support to attend crypto native
+              hackathons and art exhibitions.
+            </p>
+          </span>
+          <span className="max-w-[75%] md:max-w-[65%] mx-auto text-center">
+            <b className="text-lg">How?</b>
+            <p>
+              We currently run both hacker and creator houses. We work with
+              sponsors to accommodate their stay, their food, and anything else
+              we can. We support our hackers by helping them find the right team
+              members, hosting workshops, and providing the resources they need.
+              We support our creators by helping them meet and collaborate with
+              new artists, gain exposure, and by providing special access to
+              events.
             </p>
           </span>
           <span className="max-w-[75%] md:max-w-[65%] mx-auto">
             <b className="text-lg">Why?</b>
-            <p>Kismet Casa&apos;s purpose is to support those who need it.</p>
-          </span>
-          <span className="text-center">
-            <b className="text-lg">How?</b>
-            <p className="mx-auto max-w-[75%] md:max-w-[65%]">
-              We currently create opportunities for builders to attend Ethereum
-              events and hackatons by hosting hacker houses where we accommodate
-              their stay, their food, and anything else we can. We also support
-              their projects by helping them find the right team members,
-              hosting workshops, and providing the resources they need.
-            </p>
-            <p className="mx-auto max-w-[75%] md:max-w-[65%]">
-              We do the same for creators during IRL art experiences. Helping
-              them meet new artists, gain exposure, and getting them special
-              access to events.
+            <p>
+              Luciano found it was difficult to find efficient accommodations
+              when attempting to attend Ethereum Hackathons throughout high
+              school and college. There weren’t many opportunities for those who
+              couldn’t afford a hotel or AirBnB. In an effort to change that for
+              hackers, we created Kismet Casa. Lea then asked, “Why can’t we do
+              this for artists and creators” so we did. Our goal for Kismet Casa
+              is to create more opportunities for hackers and creators who could
+              benefit from our support.
             </p>
           </span>
           <span className="max-w-[75%] md:max-w-[65%] mx-auto">
             <b className="text-lg">Who?</b>
-            <p>
-              Kismet was founded in the depths of the 2018 bear market by
-              Luciano DeAngelo.
-            </p>
             <p>Kismet Casa is run by Luciano DeAngelo and Lea Olmos.</p>
           </span>
         </section>
