@@ -7,18 +7,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "format": "npx prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "tsc": "tsc"
   },
   "dependencies": {
-    "-": "^0.0.1",
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.1.1",
     "framer-motion": "^10.16.9",
     "next": "14.0.3",
-    "open-graph-scraper": "^6.3.2",
     "react": "^18",
-    "react-dom": "^18",
-    "save-dev": "^0.0.1-security"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -26,7 +26,7 @@
     "@types/react-dom": "^18",
     "@typescript-eslint/eslint-plugin": "^6.13.1",
     "autoprefixer": "^10.0.1",
-    "eslint": "^8",
+    "eslint": "^8.55.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-next": "14.0.3",
     "eslint-config-prettier": "^9.1.0",
@@ -43,7 +43,7 @@
     "prettier": "^3.1.0",
     "scss": "^0.2.4",
     "tailwindcss": "^3.3.0",
-    "typescript": "^5"
+    "typescript": "^5.3.3"
   },
   "lint-staged": {
     "*.{js,jsx}": "eslint --fix",

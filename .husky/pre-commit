@@ -2,4 +2,4 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 npx lint-staged
-npx tsc --noEmit && npx eslint --fix . && npx prettier --write .
+npm run tsc --noEmit && npm run lint --fix . && npm run format

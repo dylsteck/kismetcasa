@@ -2,9 +2,9 @@
 
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import kismetCreatorHouse from '../../public/kismetCreatorHouse.png'
+import kismetCreatorHouse from '@/public/kismetCreatorHouse.png'
 
-export default function KismetLogo() {
+export function KismetLogo() {
   return (
     <motion.div
       initial={{ opacity: 0, y: -50 }}
@@ -16,7 +16,7 @@ export default function KismetLogo() {
         alt="Kismet creator house image"
         width="500"
         height="500"
-        objectFit="contain"
+        className="object-contain"
       />
     </motion.div>
   )
