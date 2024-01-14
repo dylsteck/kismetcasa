@@ -5,12 +5,14 @@ import Image from 'next/image'
 import rainbowkit from '@/public/rainbowkit-logo.png'
 import warpcast from '@/public/warpcast-logo.png'
 import { nfts } from '@/utils/nfts'
+import NavBar from '@/components/NavBar'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center">
+      <NavBar />
       <header className="flex justify-center">
         <KismetLogo />
       </header>
