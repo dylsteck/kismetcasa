@@ -46,7 +46,7 @@ export default function Home() {
               Luciano found it was difficult to find efficient accommodations
               when attempting to attend Ethereum Hackathons throughout high
               school and college. There weren’t many opportunities for those who
-              couldn’t afford a hotel or AirBnB. In an effort to change that for
+              couldn’t afford a hotel or Airbnb. In an effort to change that for
               hackers, we created Kismet Casa. Lea then asked, “Why can’t we do
               this for artists and creators” so we did. Our goal for Kismet Casa
               is to create more opportunities for hackers and creators who could
