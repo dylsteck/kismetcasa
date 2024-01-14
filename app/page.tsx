@@ -18,18 +18,18 @@ export default function Home() {
         className={`text-center flex flex-col gap-16 justify-center items-center mx-4 md:mx-8 min-h-screen max-w-6xl ${inter.className}`}
       >
         <section>
-          <h3>Kismet Casa</h3>
-          <span className="max-w-[75%] md:max-w-[65%] mx-auto">
-            <b className="text-lg">What?</b>
+          <h3 className="pb-6">Kismet Casa</h3>
+          <div className="max-w-[75%] md:max-w-[65%] mx-auto pb-3">
+            <p className="text-lg pb-1 font-semibold">What?</p>
             <p>
               Kismet is a Community of individuals who forge their fate
               together. Kismet Casa is a collective effort to accommodate
               talented individuals who need support to attend crypto native
               hackathons and art exhibitions.
             </p>
-          </span>
-          <span className="max-w-[75%] md:max-w-[65%] mx-auto text-center">
-            <b className="text-lg">How?</b>
+          </div>
+          <div className="max-w-[75%] md:max-w-[65%] mx-auto text-center pb-3">
+            <p className="text-lg pb-1 font-semibold">How?</p>
             <p>
               We currently run both hacker and creator houses. We work with
               sponsors to accommodate their stay, their food, and anything else
@@ -39,9 +39,9 @@ export default function Home() {
               new artists, gain exposure, and by providing special access to
               events.
             </p>
-          </span>
-          <span className="max-w-[75%] md:max-w-[65%] mx-auto">
-            <b className="text-lg">Why?</b>
+          </div>
+          <div className="max-w-[75%] md:max-w-[65%] mx-auto pb-3">
+            <p className="text-lg pb-1 font-semibold">Why?</p>
             <p>
               Luciano found it was difficult to find efficient accommodations
               when attempting to attend Ethereum Hackathons throughout high
@@ -52,11 +52,11 @@ export default function Home() {
               is to create more opportunities for hackers and creators who could
               benefit from our support.
             </p>
-          </span>
-          <span className="max-w-[75%] md:max-w-[65%] mx-auto">
-            <b className="text-lg">Who?</b>
+          </div>
+          <div className="max-w-[75%] md:max-w-[65%] mx-auto">
+            <p className="text-lg pb-1 font-semibold">Who?</p>
             <p>Kismet Casa is run by Luciano DeAngelo and Lea Olmos.</p>
-          </span>
+          </div>
         </section>
         <section className="flex flex-col gap-2">
           <h3>Past Events</h3>
