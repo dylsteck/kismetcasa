@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: PAGE.title,
     description: PAGE.description,
-    url: 'https://kismetcasa.vercel.app',
+    url: 'https://kismetcasa.xyz',
     siteName: PAGE.title,
     images: [
       {
@@ -47,16 +47,15 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
-
       <Script strategy="lazyOnload">
         {`
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                    gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-                    page_path: window.location.pathname,
-                    });
-                `}
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+          page_path: window.location.pathname,
+          });
+        `}
       </Script>
       <body className={inter.className}>{children}</body>
     </html>
