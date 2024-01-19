@@ -1,5 +1,7 @@
 ### kismetcasa
 
+![Kismet logo](https://i.imgur.com/1PeZJCX.png)
+
 The homepage for Kismet Casa -- [view the site](https://kismetcasa.xyz)
 
 To run the app locally:

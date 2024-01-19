@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: PAGE.title,
     images: [
       {
-        url: 'https://i.imgur.com/zIqo5LQ.png',
+        url: 'https://i.imgur.com/1PeZJCX.png',
         width: 1200,
         height: 634,
         alt: 'og:image',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: PAGE.title,
     description: PAGE.description,
     creator: '@kismetcasa',
-    images: ['https://i.imgur.com/zIqo5LQ.png'],
+    images: ['https://i.imgur.com/1PeZJCX.png'],
   },
 }
 
