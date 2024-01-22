@@ -1,6 +1,6 @@
 ### kismetcasa
 
-![Kismet logo](https://i.imgur.com/1PeZJCX.png)
+![Kismet Casa logo](https://i.imgur.com/Lmhmp3m.jpg)
 
 The homepage for Kismet Casa -- [view the site](https://kismetcasa.xyz)
 
@@ -11,7 +11,7 @@ To run the app locally:
 
 What the site does right now:
 - SPA(single-page application) that shows:
-  - main logo
+  - main video + logo
   - description
   - events
   - NFTs
