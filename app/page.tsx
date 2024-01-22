@@ -1,5 +1,5 @@
 import { Inter } from 'next/font/google'
-import { Footer, ZoraNFTViewer, KismetLogo } from '@/components'
+import { Footer, ZoraNFTViewer, KismetCasaVideo } from '@/components'
 import { XIcon } from '@/assets/socialMediaIcons'
 import Image from 'next/image'
 import rainbowkit from '@/public/rainbowkit-logo.png'
@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center">
       <header className="flex justify-center">
-        <KismetLogo />
+        <KismetCasaVideo />
       </header>
       <main
         className={`text-center flex flex-col gap-16 justify-center items-center mx-4 md:mx-8 min-h-screen max-w-6xl ${inter.className}`}
