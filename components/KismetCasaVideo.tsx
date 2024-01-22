@@ -3,9 +3,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-// import logo from '../public/kismetCreatorHouse.png'
 
-export function KismetLogo() {
+export function KismetCasaVideo() {
   return (
     <motion.div
       initial={{ opacity: 0, y: -50 }}
