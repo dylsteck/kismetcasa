@@ -4,7 +4,7 @@ import { XIcon } from '@/assets/socialMediaIcons'
 import Image from 'next/image'
 import rainbowkit from '@/public/rainbowkit-logo.png'
 import warpcast from '@/public/warpcast-logo.png'
-import { nfts } from '@/utils/nfts'
+import { creatorHouse2023Nfts, tokyo2024Nfts } from '@/utils/nfts'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,10 +22,9 @@ export default function Home() {
           <div className="max-w-[75%] md:max-w-[65%] mx-auto pb-3">
             <p className="text-lg pb-1 font-semibold">What?</p>
             <p>
-              Kismet is a Community of individuals who forge their fate
-              together. Kismet Casa is a collective effort to accommodate
-              talented individuals who need support to attend crypto native
-              hackathons and art exhibitions.
+              Kismet is a family who forges their fate together. Kismet Casa is
+              a collective effort to accommodate talented individuals who need
+              support to attend crypto native hackathons and art exhibitions.
             </p>
           </div>
           <div className="max-w-[75%] md:max-w-[65%] mx-auto text-center pb-3">
@@ -61,14 +60,25 @@ export default function Home() {
         <section className="flex flex-col gap-2">
           <h3>Past Events</h3>
           <a
-            href="https://twitter.com/KismetCasa/status/1694392087452545122"
+            href="https://x.com/kismetcasa/status/1792977933893501158?s=46"
             target="_blank"
             rel="noreferrer"
             className="hover:text-blue-800"
           >
             <p>
-              Kismet Casa at Ethereum Argentina -{' '}
-              <span className="font-light text-sm">Aug 2023</span>
+              Kismet Casa at EDCON -{' '}
+              <span className="font-light text-sm">July 2024</span>
+            </p>
+          </a>
+          <a
+            href="https://x.com/kismetcasa/status/1792977933893501158?s=46"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-blue-800"
+          >
+            <p>
+              Kismet Casa at Mu Buenos -{' '}
+              <span className="font-light text-sm">March 2024</span>
             </p>
           </a>
           <a
@@ -82,12 +92,37 @@ export default function Home() {
               <span className="font-light text-sm">Nov 2023</span>
             </p>
           </a>
+          <a
+            href="https://twitter.com/KismetCasa/status/1694392087452545122"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-blue-800"
+          >
+            <p>
+              Kismet Casa at Ethereum Argentina -{' '}
+              <span className="font-light text-sm">Aug 2023</span>
+            </p>
+          </a>
+        </section>
+        <section className="flex flex-col gap-2">
+          <h3>Tokyo 2024 Collection</h3>
+          <div className="flex flex-wrap gap-4 justify-center items-center">
+            {tokyo2024Nfts.map((nft) => (
+              <ZoraNFTViewer
+                key={`tokyo-2024-zora-nft-${tokyo2024Nfts.indexOf(nft)}`}
+                nft={nft}
+              />
+            ))}
+          </div>
         </section>
         <section className="flex flex-col gap-2">
           <h3>Creator House 2023 Collection</h3>
           <div className="flex flex-wrap gap-4 justify-center items-center">
-            {nfts.map((nft) => (
-              <ZoraNFTViewer key={`zora-nft-${nfts.indexOf(nft)}`} nft={nft} />
+            {creatorHouse2023Nfts.map((nft) => (
+              <ZoraNFTViewer
+                key={`creator-house-2023-zora-nft-${creatorHouse2023Nfts.indexOf(nft)}`}
+                nft={nft}
+              />
             ))}
           </div>
         </section>
