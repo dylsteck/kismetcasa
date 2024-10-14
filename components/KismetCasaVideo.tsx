@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/media-has-caption */
-
 'use client'
 
 import { motion } from 'framer-motion'
