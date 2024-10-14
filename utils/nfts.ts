@@ -1,4 +1,3 @@
-/* eslint-disable sonarjs/no-duplicate-string */
 import { type ZoraNFT } from './types'
 
 export const creatorHouse2023Nfts: ZoraNFT[] = [
