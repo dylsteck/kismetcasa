@@ -4,7 +4,7 @@ import { XIcon } from '@/assets/socialMediaIcons'
 import Image from 'next/image'
 import rainbowkit from '@/public/rainbowkit-logo.png'
 import warpcast from '@/public/warpcast-logo.png'
-import { creatorHouse2023Nfts, tokyo2024Nfts } from '@/utils/nfts'
+import { creatorHouse2023Nfts, tokyo2024Nfts } from '@/lib/nfts'
 
 const inter = Inter({ subsets: ['latin'] })
 

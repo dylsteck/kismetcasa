@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import React from 'react'
-import { type ZoraNFT } from '../utils/types'
+import { type ZoraNFT } from '../lib/types'
 
 export function ZoraNFTViewer({ nft }: { nft: ZoraNFT }) {
   return (
