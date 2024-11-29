@@ -14,6 +14,7 @@ export function KismetCasaVideo() {
         height="500"
         autoPlay
         loop
+        muted={true}
         controls
         className="p-6 md:p-0 mt-3 mb-6 md:mb-10"
       >
