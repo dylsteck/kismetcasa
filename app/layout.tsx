@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import { ReactNode } from 'react'
 import '@/styles/globals.css'
-import { BANNER_URL, BASE_URL, frame } from '@/lib/utils'
+import { BASE_URL, frame, OG_BANNER_URL } from '@/lib/utils'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: PAGE.title,
     images: [
       {
-        url: BANNER_URL,
+        url: OG_BANNER_URL,
         width: 1200,
         height: 634,
         alt: 'og:image',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: PAGE.title,
     description: PAGE.description,
     creator: '@kismetcasa',
-    images: [BANNER_URL],
+    images: [OG_BANNER_URL],
   },
   other: {
     'fc:frame': JSON.stringify(frame),
