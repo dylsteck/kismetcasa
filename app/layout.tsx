@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import { ReactNode } from 'react'
 import '@/styles/globals.css'
+import { BANNER_URL, BASE_URL, frame } from '@/lib/utils'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,11 +18,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: PAGE.title,
     description: PAGE.description,
-    url: 'https://kismetcasa.xyz',
+    url: BASE_URL,
     siteName: PAGE.title,
     images: [
       {
-        url: 'https://i.imgur.com/Lmhmp3m.jpg',
+        url: BANNER_URL,
         width: 1200,
         height: 634,
         alt: 'og:image',
@@ -35,7 +36,10 @@ export const metadata: Metadata = {
     title: PAGE.title,
     description: PAGE.description,
     creator: '@kismetcasa',
-    images: ['https://i.imgur.com/Lmhmp3m.jpg'],
+    images: [BANNER_URL],
+  },
+  other: {
+    'fc:frame': JSON.stringify(frame),
   },
 }
 
