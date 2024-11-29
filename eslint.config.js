@@ -76,6 +76,7 @@ export default [
       'public',
       'styles',
       'coverage',
+      'app/.well-known/farcaster.json/route.ts',
     ],
   },
   {

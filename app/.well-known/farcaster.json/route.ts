@@ -5,9 +5,9 @@ export async function GET() {
     accountAssociation: {
       header:
         'eyJmaWQiOjYxNiwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDVFNzlGNjkwY2NENDIwMDdENUEwYUQ2NzhDRDQ3NDc0MzM5NDAwRTMifQ',
-      payload: 'eyJkb21haW4iOiJ3d3cua2lzbWV0Y2FzYS54eXoifQ',
+      payload: 'eyJkb21haW4iOiJraXNtZXRjYXNhLnh5eiJ9',
       signature:
-        'MHg0OWVkOGM5ZDE5YzRkOWNlOWU4NmM4MzkyNGExNjg1ZThmMmE1ZTE0YmMxNjcyM2UzOGIwNDBlNzZmMDM4MTA2MjFlZTRhOGIyOGRkMWQwMDM0NmU3MGIxNTQwOWFkNmQwNWZkOGQzMzgzZTBjMDdkMjNjNTU2MzBhNzUyNTMzZjFj',
+        'MHg5OTVhYjVhZjI3MjhlOWI5NmE2MjVhNWU3NWM0NDBiOTA3ZGM2YzhjZmM3ZTdhODIyM2YwMDZkZmYxMGJjN2IwNDg0NzkyNDg5NTNmY2Y1ZTMwNzBlYmE2ZWJiOTE4ZmRkNzAwYjgyYTQ2MWQ2NTIyNTFkNWE1ODUyYmZhZmMxZjFi',
     },
     frame: {
       version: '0.0.0',
