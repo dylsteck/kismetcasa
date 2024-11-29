@@ -12,7 +12,7 @@ export const frame = {
       name: 'Kismet Casa',
       url: BASE_URL,
       splashImageUrl: ICON_URL,
-      splashBackgroundColor: '#000000',
+      splashBackgroundColor: '#FFFFFF',
     },
   },
 }
