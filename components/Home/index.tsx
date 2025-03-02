@@ -4,13 +4,12 @@
 
 import { Inter } from 'next/font/google'
 import React from 'react'
-import { Footer, ZoraNFTViewer, KismetCasaVideo } from '@/components'
+import { Footer, FrameLink, KismetCasaVideo, ZoraNFTViewer } from '@/components'
 import { XIcon } from '@/assets/socialMediaIcons'
 import rainbowkit from '@/public/rainbowkit-logo.png'
 import warpcast from '@/public/warpcast-logo.png'
 import { creatorHouse2023Nfts, tokyo2024Nfts } from '@/lib/nfts'
 import sdk from '@farcaster/frame-sdk'
-import { FrameLink } from '../FrameLink'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -89,13 +88,13 @@ function Home() {
               <span className="font-light text-sm">March 2024</span>
             </p>
           </FrameLink>
-          <FrameLink type="url" identifier="https://twitter.com/KismetCasa/status/1722344034369224728">
+          <FrameLink type="url" identifier="https://x.com/KismetCasa/status/1722344034369224728">
             <p>
               Kismet Casa at BRT Moments -{' '}
               <span className="font-light text-sm">Nov 2023</span>
             </p>
           </FrameLink>
-          <FrameLink type="url" identifier="https://twitter.com/KismetCasa/status/1694392087452545122">
+          <FrameLink type="url" identifier="https://x.com/KismetCasa/status/1694392087452545122">
             <p>
               Kismet Casa at Ethereum Argentina -{' '}
               <span className="font-light text-sm">Aug 2023</span>
@@ -127,10 +126,9 @@ function Home() {
         <section className="flex flex-col gap-2">
           <h3 className="font-medium">Contact</h3>
           <div className="flex flex-col gap-2 rounded-md border border-grey_light px-6 py-4">
-            <a
-              href="https://rainbow.me/kismetcasa.eth"
-              target="_blank"
-              rel="noreferrer"
+            <FrameLink
+              type="url"
+              identifier="https://rainbow.me/kismetcasa.eth"
               className="transition flex gap-2 w-fit items-center group"
             >
               <img
@@ -141,38 +139,34 @@ function Home() {
                 className="filter grayscale"
               />
               <p className="group-hover:text-blue-800 m-0">Kismetcasa.eth</p>
-            </a>
-            <a
-              href="https://twitter.com/kismetcasa"
-              target="_blank"
-              rel="noreferrer"
+            </FrameLink>
+            <FrameLink
+              type="url"
+              identifier="https://x.com/kismetcasa"
               className="transition flex gap-2 w-fit items-center group"
             >
               <XIcon className="h-6 w-6 fill-current" />
               <p className="group-hover:text-blue-800 m-0">Kismet Casa</p>
-            </a>
-            <a
-              href="https://twitter.com/lucianodeangeIo"
-              target="_blank"
-              rel="noreferrer"
+            </FrameLink>
+            <FrameLink
+              type="url"
+              identifier="https://x.com/lucianodeangeIo"
               className="transition flex gap-2 w-fit items-center group"
             >
               <XIcon className="h-6 w-6 fill-current" />
               <p className="group-hover:text-blue-800 m-0">Luciano</p>
-            </a>
-            <a
-              href="https://twitter.com/leaolmos"
-              target="_blank"
-              rel="noreferrer"
+            </FrameLink>
+            <FrameLink
+              type="url"
+              identifier="https://x.com/leaolmos"
               className="transition flex gap-2 w-fit items-center group"
             >
               <XIcon className="h-6 w-6 fill-current " />
               <p className="group-hover:text-blue-800 m-0">Lea</p>
-            </a>
-            <a
-              href="https://warpcast.com/luciano"
-              target="_blank"
-              rel="noreferrer"
+            </FrameLink>
+            <FrameLink
+              type="profile"
+              identifier="838"
               className="transition flex gap-2 w-fit items-center group"
             >
               <img
@@ -183,11 +177,10 @@ function Home() {
                 className="filter grayscale"
               />
               <p className="group-hover:text-blue-800 m-0">Luciano</p>
-            </a>
-            <a
-              href="https://warpcast.com/lea-olmos"
-              target="_blank"
-              rel="noreferrer"
+            </FrameLink>
+            <FrameLink
+              type="profile"
+              identifier="10799"
               className="transition flex gap-2 w-fit items-center group"
             >
               <img
@@ -198,7 +191,7 @@ function Home() {
                 className="filter grayscale"
               />
               <p className="group-hover:text-blue-800 m-0">Lea</p>
-            </a>
+            </FrameLink>
           </div>
         </section>
       </main>

@@ -1,14 +1,17 @@
 import sdk from "@farcaster/frame-sdk";
 import React from "react";
+import cn from "classnames";
 
 function FrameLink({
     identifier,
     type,
-    children
+    children,
+    className
 }: {
     identifier: string,
     type: 'url' | 'profile',
-    children: React.ReactNode
+    children: React.ReactNode,
+    className?: string
 }){
 
     const handleOnClick = async() => {
@@ -37,7 +40,7 @@ function FrameLink({
         }
     }
     return(
-        <div className="w-auto cursor-pointer hover:text-blue-800" onClick={() => handleOnClick()}>
+        <div className={cn("w-auto cursor-pointer hover:text-blue-800", className)} onClick={() => handleOnClick()}>
             {children}
         </div>
     )

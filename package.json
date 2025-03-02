@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@farcaster/frame-sdk": "^0.0.29",
+    "classnames": "^2.5.1",
     "framer-motion": "^12.4.7",
     "next": "15.2.0",
     "react": "^19.0.0",
