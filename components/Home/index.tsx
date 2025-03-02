@@ -1,18 +1,20 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable @next/next/no-img-element */
 'use client'
 
 import { Inter } from 'next/font/google'
 import React from 'react'
 import { Footer, ZoraNFTViewer, KismetCasaVideo } from '@/components'
 import { XIcon } from '@/assets/socialMediaIcons'
-import Image from 'next/image'
 import rainbowkit from '@/public/rainbowkit-logo.png'
 import warpcast from '@/public/warpcast-logo.png'
 import { creatorHouse2023Nfts, tokyo2024Nfts } from '@/lib/nfts'
 import sdk from '@farcaster/frame-sdk'
+import { FrameLink } from '../FrameLink'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export function Home() {
+function Home() {
   const [isSDKLoaded, setIsSDKLoaded] = React.useState<boolean>(false)
 
   React.useEffect(() => {
@@ -34,7 +36,7 @@ export function Home() {
         className={`text-center flex flex-col gap-16 justify-center items-center mx-4 md:mx-8 min-h-screen max-w-6xl ${inter.className}`}
       >
         <section>
-          <h3 className="pb-6">Kismet Casa</h3>
+          <h3 className="pb-6 text-3xl md:text-4xl">Kismet Casa</h3>
           <div className="max-w-[75%] md:max-w-[65%] mx-auto pb-3">
             <p className="text-lg pb-1 font-semibold">What?</p>
             <p>
@@ -60,10 +62,10 @@ export function Home() {
             <p>
               Luciano found it was difficult to find efficient accommodations
               when attempting to attend Ethereum Hackathons throughout high
-              school and college. There weren’t many opportunities for those who
-              couldn’t afford a hotel or Airbnb. In an effort to change that for
-              hackers, we created Kismet Casa. Lea then asked, “Why can’t we do
-              this for artists and creators” so we did. Our goal for Kismet Casa
+              school and college. There weren't many opportunities for those who
+              couldn't afford a hotel or Airbnb. In an effort to change that for
+              hackers, we created Kismet Casa. Lea then asked, "Why can't we do
+              this for artists and creators" so we did. Our goal for Kismet Casa
               is to create more opportunities for hackers and creators who could
               benefit from our support.
             </p>
@@ -74,54 +76,34 @@ export function Home() {
           </div>
         </section>
         <section className="flex flex-col gap-2">
-          <h3>Past Events</h3>
-          <a
-            href="https://x.com/kismetcasa/status/1792977933893501158?s=46"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-blue-800"
-          >
-            <p>
+          <h3 className="font-medium">Past Events</h3>
+          <FrameLink type="url" identifier="https://x.com/kismetcasa/status/1792977933893501158?s=46">
+            <p className="hover:text-blue-800">
               Kismet Casa at EDCON -{' '}
               <span className="font-light text-sm">July 2024</span>
             </p>
-          </a>
-          <a
-            href="https://x.com/kismetcasa/status/1792977933893501158?s=46"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-blue-800"
-          >
+          </FrameLink>
+          <FrameLink type="url" identifier="https://x.com/kismetcasa/status/1792977933893501158?s=46">
             <p>
               Kismet Casa at Mu Buenos -{' '}
               <span className="font-light text-sm">March 2024</span>
             </p>
-          </a>
-          <a
-            href="https://twitter.com/KismetCasa/status/1722344034369224728"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-blue-800"
-          >
+          </FrameLink>
+          <FrameLink type="url" identifier="https://twitter.com/KismetCasa/status/1722344034369224728">
             <p>
               Kismet Casa at BRT Moments -{' '}
               <span className="font-light text-sm">Nov 2023</span>
             </p>
-          </a>
-          <a
-            href="https://twitter.com/KismetCasa/status/1694392087452545122"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-blue-800"
-          >
+          </FrameLink>
+          <FrameLink type="url" identifier="https://twitter.com/KismetCasa/status/1694392087452545122">
             <p>
               Kismet Casa at Ethereum Argentina -{' '}
               <span className="font-light text-sm">Aug 2023</span>
             </p>
-          </a>
+          </FrameLink>
         </section>
         <section className="flex flex-col gap-2">
-          <h3>Tokyo 2024 Collection</h3>
+          <h3 className="font-medium">Tokyo 2024 Collection</h3>
           <div className="flex flex-wrap gap-4 justify-center items-center">
             {tokyo2024Nfts.map((nft) => (
               <ZoraNFTViewer
@@ -132,7 +114,7 @@ export function Home() {
           </div>
         </section>
         <section className="flex flex-col gap-2">
-          <h3>Creator House 2023 Collection</h3>
+          <h3 className="font-medium">Creator House 2023 Collection</h3>
           <div className="flex flex-wrap gap-4 justify-center items-center">
             {creatorHouse2023Nfts.map((nft) => (
               <ZoraNFTViewer
@@ -143,7 +125,7 @@ export function Home() {
           </div>
         </section>
         <section className="flex flex-col gap-2">
-          <h3>Contact</h3>
+          <h3 className="font-medium">Contact</h3>
           <div className="flex flex-col gap-2 rounded-md border border-grey_light px-6 py-4">
             <a
               href="https://rainbow.me/kismetcasa.eth"
@@ -151,10 +133,10 @@ export function Home() {
               rel="noreferrer"
               className="transition flex gap-2 w-fit items-center group"
             >
-              <Image
+              <img
                 width={24}
                 height={24}
-                src={rainbowkit}
+                src={rainbowkit.src}
                 alt="rainbowkit-logo"
                 className="filter grayscale"
               />
@@ -193,10 +175,10 @@ export function Home() {
               rel="noreferrer"
               className="transition flex gap-2 w-fit items-center group"
             >
-              <Image
+              <img
                 width={24}
                 height={24}
-                src={warpcast}
+                src={warpcast.src}
                 alt="warpcast-logo"
                 className="filter grayscale"
               />
@@ -208,10 +190,10 @@ export function Home() {
               rel="noreferrer"
               className="transition flex gap-2 w-fit items-center group"
             >
-              <Image
+              <img
                 width={24}
                 height={24}
-                src={warpcast}
+                src={warpcast.src}
                 alt="warpcast-logo"
                 className="filter grayscale"
               />
@@ -224,3 +206,5 @@ export function Home() {
     </div>
   )
 }
+
+export { Home };

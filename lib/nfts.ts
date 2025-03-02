@@ -8,7 +8,7 @@ export const creatorHouse2023Nfts: ZoraNFT[] = [
     date: 'November 7, 2023',
     url: 'https://zora.co/collect/zora:0x8e4a7d53e12cea8f21646ef303fed39162e5df49/1',
     imageUrl:
-      'https://ipfs.decentralized-content.com/ipfs/bafybeibrn53e7rb7q2dfu4owvplkjaqt523zslqkjlvckgzigcrkseq4fm',
+      'https://i.imgur.com/SK35OHT.png',
   },
   {
     title: 'Kismet Zorb.1',
@@ -17,7 +17,7 @@ export const creatorHouse2023Nfts: ZoraNFT[] = [
     date: 'November 6, 2023',
     url: 'https://zora.co/collect/zora:0x8e4a7d53e12cea8f21646ef303fed39162e5df49/2',
     imageUrl:
-      'https://ipfs.decentralized-content.com/ipfs/bafybeie7hv2i5vopa3tgdaiypzpwdlcals24dzjdb4iraxnwio4zn3swou',
+      'https://i.imgur.com/HXcPCRH.png',
   },
   {
     title: 'Efervescencia',
@@ -26,7 +26,7 @@ export const creatorHouse2023Nfts: ZoraNFT[] = [
     date: 'November 7, 2023',
     url: 'https://zora.co/collect/zora:0x8e4a7d53e12cea8f21646ef303fed39162e5df49/3',
     imageUrl:
-      'https://ipfs.decentralized-content.com/ipfs/bafybeihuosflvlg5krnzdpdbfsxf4fiy5lmsu2h443hphwlnplil3njmf4',
+      'https://i.imgur.com/mmcF70c.png',
   },
 ]
 
@@ -37,7 +37,7 @@ export const tokyo2024Nfts: ZoraNFT[] = [
     date: 'July 25, 2024',
     url: 'https://zora.co/collect/zora:0x7f1dc4a569b28840b33cf69b66482e5ccf2558fe/13',
     imageUrl:
-      'https://media.decentralized-content.com/-/rs:fit:800:800/f:webp/aHR0cHM6Ly9tYWdpYy5kZWNlbnRyYWxpemVkLWNvbnRlbnQuY29tL2lwZnMvYmFmeWJlaWRwZTRubGtpbnkzYzZ3b3hpa3c1cWU3eXJ0Y2RzeHhpam1zenByNzV4Nm9mNjdtdmdudDQ',
+      'https://i.imgur.com/D2w4FFN.png',
   },
   {
     title: 'Kanojo',
@@ -45,7 +45,7 @@ export const tokyo2024Nfts: ZoraNFT[] = [
     date: 'July 25, 2024',
     url: 'https://zora.co/collect/zora:0x7f1dc4a569b28840b33cf69b66482e5ccf2558fe/9',
     imageUrl:
-      'https://media.decentralized-content.com/-/rs:fit:1920:1920/aHR0cHM6Ly9tYWdpYy5kZWNlbnRyYWxpemVkLWNvbnRlbnQuY29tL2lwZnMvYmFmeWJlaWJ0eWkydm96YmVzemxkbGFvYWR2d2F6a3R1M3MyYXJqNTJ2ZDRlbHFvb29yZDNtbHZ1eXk',
+      'https://i.imgur.com/wZBvD4m.png',
   },
   {
     title: 'ラーメン大好き (๑╹ڡ╹๑)',
@@ -53,6 +53,6 @@ export const tokyo2024Nfts: ZoraNFT[] = [
     date: 'July 25, 2024',
     url: 'https://zora.co/collect/zora:0x7f1dc4a569b28840b33cf69b66482e5ccf2558fe/5',
     imageUrl:
-      'https://media.decentralized-content.com/-/rs:fit:800:800/f:webp/aHR0cHM6Ly9tYWdpYy5kZWNlbnRyYWxpemVkLWNvbnRlbnQuY29tL2lwZnMvYmFmeWJlaWRhcG9ra2x3a3NrNHR4YnNkc2VwbmFobWo0NWtidGtoNXIzNGVlZzZ0N2Z0aW5zbHB1Mmk',
+      'https://i.imgur.com/jW29uMy.png',
   },
 ]

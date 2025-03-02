@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 
-export function KismetCasaVideo() {
+function KismetCasaVideo() {
   return (
     <motion.div
       initial={{ opacity: 0, y: -50 }}
@@ -27,3 +27,5 @@ export function KismetCasaVideo() {
     </motion.div>
   )
 }
+
+export { KismetCasaVideo };
