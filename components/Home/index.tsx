@@ -76,7 +76,7 @@ function Home() {
         </section>
         <section className="flex flex-col gap-2">
           <h3 className="font-medium">Past Events</h3>
-          <FrameLink type="url" identifier="https://x.com/kismetcasa/status/1792977933893501158?s=46">
+          <FrameLink type="url" identifier="https://x.com/kismetcasa/status/1825688411430142366">
             <p className="hover:text-blue-800">
               Kismet Casa at EDCON -{' '}
               <span className="font-light text-sm">July 2024</span>
