@@ -10,7 +10,7 @@ export async function GET() {
         'MHg5OTVhYjVhZjI3MjhlOWI5NmE2MjVhNWU3NWM0NDBiOTA3ZGM2YzhjZmM3ZTdhODIyM2YwMDZkZmYxMGJjN2IwNDg0NzkyNDg5NTNmY2Y1ZTMwNzBlYmE2ZWJiOTE4ZmRkNzAwYjgyYTQ2MWQ2NTIyNTFkNWE1ODUyYmZhZmMxZjFi',
     },
     frame: {
-      version: '0.0.1',
+      version: '1',
       name: 'Kismet Casa',
       iconUrl: ICON_URL,
       splashImageUrl: ICON_URL,
