@@ -7,7 +7,7 @@ import React from 'react'
 import { Footer, MiniAppLink, KismetCasaVideo, ZoraNFTViewer } from '@/components'
 import { XIcon } from '@/assets/socialMediaIcons'
 import rainbowkit from '@/public/rainbowkit-logo.png'
-import warpcast from '@/public/warpcast-logo.png'
+import farcaster from '@/public/farcaster-logo.png'
 import { creatorHouse2023Nfts, tokyo2024Nfts } from '@/lib/nfts'
 import sdk from '@farcaster/miniapp-sdk'
 
@@ -76,10 +76,22 @@ function Home() {
         </section>
         <section className="flex flex-col gap-2">
           <h3 className="font-medium">Past Events</h3>
+          <MiniAppLink type="url" identifier="https://x.com/kismetcasa/status/1985337538517897653?s=46">
+            <p className="hover:text-blue-800">
+              Kismet Casa Kesennuma -{' '}
+              <span className="font-light text-sm">Oct 2025</span>
+            </p>
+          </MiniAppLink>
           <MiniAppLink type="url" identifier="https://x.com/kismetcasa/status/1825688411430142366">
             <p className="hover:text-blue-800">
               Kismet Casa at EDCON -{' '}
               <span className="font-light text-sm">July 2024</span>
+            </p>
+          </MiniAppLink>
+          <MiniAppLink type="url" identifier="https://x.com/kismetcasa/status/1866829564980367755?s=46">
+            <p className="hover:text-blue-800">
+              Kismet Casa Devcon -{' '}
+              <span className="font-light text-sm">Nov 2024</span>
             </p>
           </MiniAppLink>
           <MiniAppLink type="url" identifier="https://x.com/kismetcasa/status/1792977933893501158?s=46">
@@ -170,10 +182,10 @@ function Home() {
               className="transition flex gap-2 w-fit items-center group"
             >
               <img
-                width={24}
-                height={24}
-                src={warpcast.src}
-                alt="warpcast-logo"
+                width={26}
+                height={26}
+                src={farcaster.src}
+                alt="farcaster-logo"
                 className="filter grayscale"
               />
               <p className="group-hover:text-blue-800 m-0">Luciano</p>
@@ -184,10 +196,10 @@ function Home() {
               className="transition flex gap-2 w-fit items-center group"
             >
               <img
-                width={24}
-                height={24}
-                src={warpcast.src}
-                alt="warpcast-logo"
+                width={26}
+                height={26}
+                src={farcaster.src}
+                alt="farcaster-logo"
                 className="filter grayscale"
               />
               <p className="group-hover:text-blue-800 m-0">Lea</p>
