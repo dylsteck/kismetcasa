@@ -54,7 +54,7 @@ function Home() {
           <div className="max-w-[75%] md:max-w-[65%] mx-auto pb-3">
             <p className="text-lg pb-1 font-semibold">Why?</p>
             <p>
-              Luciano found it was difficult to find efficient accommodations when attempting to attend Ethereum Hackathons throughout high school and college. There weren't many opportunities for those who couldn't afford a hotel or Airbnb.
+              Luciano found it was difficult to find efficient accommodations when attempting to attend Ethereum Hackathons throughout high school and college. There weren't many opportunities for those who couldn't afford a hotel.
               In an effort to change that for hackers, we created Kismet Casa. Lea then asked, "Why can't we do this for artists and creators" and now we almost exclusively run Hybrid Houses.
               Our goal for Kismet Casa is to create more opportunities for hackers and creators who could benefit from being a part of our family.
             </p>
@@ -72,16 +72,16 @@ function Home() {
               <span className="font-light text-sm">Oct 2025</span>
             </p>
           </MiniAppLink>
-          <MiniAppLink type="url" identifier="https://x.com/kismetcasa/status/1825688411430142366">
-            <p className="hover:text-blue-800">
-              Kismet Casa at EDCON -{' '}
-              <span className="font-light text-sm">July 2024</span>
-            </p>
-          </MiniAppLink>
           <MiniAppLink type="url" identifier="https://x.com/kismetcasa/status/1866829564980367755?s=46">
             <p className="hover:text-blue-800">
               Kismet Casa Devcon -{' '}
               <span className="font-light text-sm">Nov 2024</span>
+            </p>
+          </MiniAppLink>
+          <MiniAppLink type="url" identifier="https://x.com/kismetcasa/status/1825688411430142366">
+            <p className="hover:text-blue-800">
+              Kismet Casa at EDCON -{' '}
+              <span className="font-light text-sm">July 2024</span>
             </p>
           </MiniAppLink>
           <MiniAppLink type="url" identifier="https://x.com/kismetcasa/status/1792977933893501158?s=46">
