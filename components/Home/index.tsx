@@ -39,34 +39,24 @@ function Home() {
           <div className="max-w-[75%] md:max-w-[65%] mx-auto pb-3">
             <p className="text-lg pb-1 font-semibold">What?</p>
             <p>
-              Kismet is a family who forges their fate together. Kismet Casa is
-              a collective effort to accommodate talented individuals who need
-              support to attend crypto native hackathons and art exhibitions.
+              Kismet Casa is a collective effort to accommodate talented individuals who need support to attend crypto native hackathons and art exhibitions.
+              We are family who forges our fate together.
             </p>
           </div>
           <div className="max-w-[75%] md:max-w-[65%] mx-auto text-center pb-3">
             <p className="text-lg pb-1 font-semibold">How?</p>
             <p>
-              We currently run both hacker and creator houses. We work with
-              sponsors to accommodate their stay, their food, and anything else
-              we can. We support our hackers by helping them find the right team
-              members, hosting workshops, and providing the resources they need.
-              We support our creators by helping them meet and collaborate with
-              new artists, gain exposure, and by providing special access to
-              events.
+              We currently run both hacker and creator houses. We work with sponsors to accommodate our residents stay, their food, and anything else we can.
+              We support our hackers by helping them find the right team members, hosting workshops, and providing the resources they need.
+              We support our creators by helping them collaborate with new artists, gain exposure, and by providing special access to events.
             </p>
           </div>
           <div className="max-w-[75%] md:max-w-[65%] mx-auto pb-3">
             <p className="text-lg pb-1 font-semibold">Why?</p>
             <p>
-              Luciano found it was difficult to find efficient accommodations
-              when attempting to attend Ethereum Hackathons throughout high
-              school and college. There weren't many opportunities for those who
-              couldn't afford a hotel or Airbnb. In an effort to change that for
-              hackers, we created Kismet Casa. Lea then asked, "Why can't we do
-              this for artists and creators" so we did. Our goal for Kismet Casa
-              is to create more opportunities for hackers and creators who could
-              benefit from our support.
+              Luciano found it was difficult to find efficient accommodations when attempting to attend Ethereum Hackathons throughout high school and college. There weren't many opportunities for those who couldn't afford a hotel or Airbnb.
+              In an effort to change that for hackers, we created Kismet Casa. Lea then asked, "Why can't we do this for artists and creators" and now we almost exclusively run Hybrid Houses.
+              Our goal for Kismet Casa is to create more opportunities for hackers and creators who could benefit from being a part of our family.
             </p>
           </div>
           <div className="max-w-[75%] md:max-w-[65%] mx-auto">
