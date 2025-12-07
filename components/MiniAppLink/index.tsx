@@ -1,8 +1,8 @@
-import sdk from "@farcaster/frame-sdk";
+import sdk from "@farcaster/miniapp-sdk";
 import React from "react";
 import cn from "classnames";
 
-function FrameLink({
+function MiniAppLink({
     identifier,
     type,
     children,
@@ -12,12 +12,12 @@ function FrameLink({
     type: 'url' | 'profile',
     children: React.ReactNode,
     className?: string
-}){
+}) {
 
-    const handleOnClick = async() => {
+    const handleOnClick = async () => {
         const context = await sdk.context;
-        if(context !== undefined){
-            switch(type){
+        if (context !== undefined) {
+            switch (type) {
                 case 'url':
                     await sdk.actions.openUrl(identifier);
                     break;
@@ -26,8 +26,8 @@ function FrameLink({
                 default:
                     break;
             }
-        } else{
-            switch(type){
+        } else {
+            switch (type) {
                 case 'url':
                     window.open(identifier, '_blank')
                     break;
@@ -39,11 +39,11 @@ function FrameLink({
             }
         }
     }
-    return(
+    return (
         <div className={cn("w-auto cursor-pointer hover:text-blue-800", className)} onClick={() => handleOnClick()}>
             {children}
         </div>
     )
 }
 
-export { FrameLink };
+export { MiniAppLink };

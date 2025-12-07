@@ -3,7 +3,7 @@
 
 import React from 'react'
 import { type ZoraNFT } from '../../lib/types'
-import { FrameLink } from '../../components/FrameLink'
+import { MiniAppLink } from '../../components/MiniAppLink'
 
 function ZoraNFTViewer({ nft }: { nft: ZoraNFT }) {
   return (
@@ -19,11 +19,11 @@ function ZoraNFTViewer({ nft }: { nft: ZoraNFT }) {
         </div>
         <div className="flex items-center justify-between">
           <p className="text-lg mt-2.5">{nft.title}</p>
-          <FrameLink identifier={nft.url} type="url">
+          <MiniAppLink identifier={nft.url} type="url">
             <div className="bg-black text-white p-1.5 rounded-md text-xs hover:bg-grey_dark transition">
               Mint
             </div>
-          </FrameLink>
+          </MiniAppLink>
         </div>
       </div>
     </div>

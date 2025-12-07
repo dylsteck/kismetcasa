@@ -4,12 +4,12 @@
 
 import { Inter } from 'next/font/google'
 import React from 'react'
-import { Footer, FrameLink, KismetCasaVideo, ZoraNFTViewer } from '@/components'
+import { Footer, MiniAppLink, KismetCasaVideo, ZoraNFTViewer } from '@/components'
 import { XIcon } from '@/assets/socialMediaIcons'
 import rainbowkit from '@/public/rainbowkit-logo.png'
 import warpcast from '@/public/warpcast-logo.png'
 import { creatorHouse2023Nfts, tokyo2024Nfts } from '@/lib/nfts'
-import sdk from '@farcaster/frame-sdk'
+import sdk from '@farcaster/miniapp-sdk'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -76,30 +76,30 @@ function Home() {
         </section>
         <section className="flex flex-col gap-2">
           <h3 className="font-medium">Past Events</h3>
-          <FrameLink type="url" identifier="https://x.com/kismetcasa/status/1825688411430142366">
+          <MiniAppLink type="url" identifier="https://x.com/kismetcasa/status/1825688411430142366">
             <p className="hover:text-blue-800">
               Kismet Casa at EDCON -{' '}
               <span className="font-light text-sm">July 2024</span>
             </p>
-          </FrameLink>
-          <FrameLink type="url" identifier="https://x.com/kismetcasa/status/1792977933893501158?s=46">
+          </MiniAppLink>
+          <MiniAppLink type="url" identifier="https://x.com/kismetcasa/status/1792977933893501158?s=46">
             <p>
               Kismet Casa at Mu Buenos -{' '}
               <span className="font-light text-sm">March 2024</span>
             </p>
-          </FrameLink>
-          <FrameLink type="url" identifier="https://x.com/KismetCasa/status/1722344034369224728">
+          </MiniAppLink>
+          <MiniAppLink type="url" identifier="https://x.com/KismetCasa/status/1722344034369224728">
             <p>
               Kismet Casa at BRT Moments -{' '}
               <span className="font-light text-sm">Nov 2023</span>
             </p>
-          </FrameLink>
-          <FrameLink type="url" identifier="https://x.com/KismetCasa/status/1694392087452545122">
+          </MiniAppLink>
+          <MiniAppLink type="url" identifier="https://x.com/KismetCasa/status/1694392087452545122">
             <p>
               Kismet Casa at Ethereum Argentina -{' '}
               <span className="font-light text-sm">Aug 2023</span>
             </p>
-          </FrameLink>
+          </MiniAppLink>
         </section>
         <section className="flex flex-col gap-2">
           <h3 className="font-medium">Tokyo 2024 Collection</h3>
@@ -126,7 +126,7 @@ function Home() {
         <section className="flex flex-col gap-2">
           <h3 className="font-medium">Contact</h3>
           <div className="flex flex-col gap-2 rounded-md border border-grey_light px-6 py-4">
-            <FrameLink
+            <MiniAppLink
               type="url"
               identifier="https://rainbow.me/kismetcasa.eth"
               className="transition flex gap-2 w-fit items-center group"
@@ -139,32 +139,32 @@ function Home() {
                 className="filter grayscale"
               />
               <p className="group-hover:text-blue-800 m-0">Kismetcasa.eth</p>
-            </FrameLink>
-            <FrameLink
+            </MiniAppLink>
+            <MiniAppLink
               type="url"
               identifier="https://x.com/kismetcasa"
               className="transition flex gap-2 w-fit items-center group"
             >
               <XIcon className="h-6 w-6 fill-current" />
               <p className="group-hover:text-blue-800 m-0">Kismet Casa</p>
-            </FrameLink>
-            <FrameLink
+            </MiniAppLink>
+            <MiniAppLink
               type="url"
               identifier="https://x.com/lucianodeangeIo"
               className="transition flex gap-2 w-fit items-center group"
             >
               <XIcon className="h-6 w-6 fill-current" />
               <p className="group-hover:text-blue-800 m-0">Luciano</p>
-            </FrameLink>
-            <FrameLink
+            </MiniAppLink>
+            <MiniAppLink
               type="url"
               identifier="https://x.com/leaolmos"
               className="transition flex gap-2 w-fit items-center group"
             >
               <XIcon className="h-6 w-6 fill-current " />
               <p className="group-hover:text-blue-800 m-0">Lea</p>
-            </FrameLink>
-            <FrameLink
+            </MiniAppLink>
+            <MiniAppLink
               type="profile"
               identifier="838"
               className="transition flex gap-2 w-fit items-center group"
@@ -177,8 +177,8 @@ function Home() {
                 className="filter grayscale"
               />
               <p className="group-hover:text-blue-800 m-0">Luciano</p>
-            </FrameLink>
-            <FrameLink
+            </MiniAppLink>
+            <MiniAppLink
               type="profile"
               identifier="10799"
               className="transition flex gap-2 w-fit items-center group"
@@ -191,7 +191,7 @@ function Home() {
                 className="filter grayscale"
               />
               <p className="group-hover:text-blue-800 m-0">Lea</p>
-            </FrameLink>
+            </MiniAppLink>
           </div>
         </section>
       </main>
